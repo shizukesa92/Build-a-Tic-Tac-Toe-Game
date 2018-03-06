@@ -1,0 +1,280 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+
+#outer {
+  background: #f0b487;
+  box-shadow: inset -1px 1px 7px rgba(0, 0, 0, 0.2), inset 1px -1px 7px rgba(0, 0, 0, 0.2), 1px 12px 5px rgba(0, 0, 0, 0.4), 4px 3px 8px rgba(0, 0, 0, 0.4), 5px 10px 10px rgba(0, 0, 0, 0.2), -5px 10px 10px rgba(0, 0, 0, 0.4);
+  position: relative;
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+  margin: 10% auto;
+  padding: 30px 0 0;
+}
+
+#top {
+  display: none;
+}
+
+.score {
+  position: absolute;
+  font-size: 10px;
+  font-family: "Architects Daughter", sans-serif;
+  top: 17px;
+  color: rgba(100, 60, 50, 0.8);
+}
+
+.points {
+  position: absolute;
+  text-align: center;
+  bottom: 14px;
+  color: rgba(100, 60, 50, 0.9);
+  font-family: "Architects Daughter", sans-serif;
+}
+
+#divider {
+  position: absolute;
+  font-size: 15px;
+  top: 5px;
+  left: 141px;
+  font-family: helvetica, sans-serif;
+  font-style: normal;
+  opacity: .2;
+}
+
+#score1 {
+  left: 75px;
+}
+
+#score2 {
+  left: 161px;
+}
+
+#reset {
+  position: absolute;
+  top: 1px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-family: "Architects Daughter", sans-serif;
+  color: rgba(100, 60, 50, 0.8);
+  font-size: 15px;
+  border-radius: 20px;
+  border: 2px dashed transparent;
+}
+#reset:hover {
+  border: 2px dashed #643c32;
+  color: #643c32;
+}
+#reset:focus {
+  outline: none;
+}
+
+#inner {
+  width: 350px;
+  height: 350px;
+  background: #282828 -webkit-radial-gradient(center, #28503c, rgba(0, 20, 20, 0.6));
+  background: #282828 -moz-radial-gradient(center, #28503c, rgba(0, 20, 20, 0.6));
+  background: #282828 -ms-radial-gradient(center, #28503c, rgba(0, 20, 20, 0.6));
+  background: #282828 radial-gradient(center, #28503c, rgba(0, 20, 20, 0.6));
+  background-size: cover;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#board {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#game {
+  width: 330px;
+  height: 330px;
+  position: absolute;
+  left: 10px;
+  display: none;
+}
+
+.box {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 12px;
+  top: 0;
+  z-index: 1500;
+}
+
+#starting2,
+#starting {
+  background: #282828 -webkit-radial-gradient(center, #28503c, rgba(0, 20, 20, 0.6));
+  background: #282828 -moz-radial-gradient(center, #28503c, rgba(0, 20, 20, 0.6));
+  background: #282828 -ms-radial-gradient(center, #28503c, rgba(0, 20, 20, 0.6));
+  background: #282828 radial-gradient(center, #28503c, rgba(0, 20, 20, 0.6));
+  display: block;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  text-align: center;
+  font-family: "Architects Daughter", Helvetica, sans-serif;
+  z-index: 1500;
+}
+
+#starting2 {
+  display: none;
+}
+
+#starting2,
+#starting {
+  color: gainsboro;
+  position: relative;
+  top: 40px;
+  margin: 10px auto;
+}
+#starting2 p,
+#starting p {
+  font-size: 30px;
+}
+#starting2 button,
+#starting button {
+  background: none;
+  border: none;
+  opacity: .6;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  font-size: 2.8em;
+}
+#starting2 button:focus,
+#starting button:focus {
+  outline: 1;
+}
+#starting2 button:hover,
+#starting button:hover {
+  opacity: 1;
+  border: 2px dashed rgba(230, 230, 230, 0.5);
+}
+#starting2 #back,
+#starting #back {
+  display: block;
+  font-size: 20px;
+  position: absolute;
+  right: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#game {
+  width: 330px;
+  height: 330px;
+  position: absolute;
+  z-index: 1500;
+  left: 10px;
+  bottom: 10px;
+}
+
+#boxes {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 30px;
+  display: none;
+}
+
+li {
+  width: 30%;
+  height: 30%;
+  display: inline-block;
+  position: relative;
+  margin-left: 2px;
+  margin-right: 2px;
+  overflow: hidden;
+  bottom: 15px;
+  list-style: none;
+}
+li i {
+  font-size: 6.5rem;
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-style: normal;
+  font-family: "Architects Daughter", "Helvetica", "sans-serif";
+  color: rgba(220, 220, 220, 0.7);
+  z-index: 1500;
+  cursor: pointer;
+}
+
+#turn {
+  background: #00c8c8;
+  display: none;
+}
+
+#turn2 {
+  background: #c86464;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 200px;
+  display: none;
+}
+
+.turns {
+  position: relative;
+  height: 0px;
+  width: 400px;
+  z-index: 10;
+  margin: 10% auto;
+  margin-bottom: -7%;
+  color: white;
+}
+.turns p {
+  font-size: 20px;
+  display: inline;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#results {
+  background: rgba(0, 0, 0, 0.8);
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  box-sizing: border-box;
+  display: none;
+}
+#results p {
+  color: white;
+  text-align: center;
+  position: absolute;
+  font-size: 2.3rem;
+  margin: 0;
+  top: 150px;
+  left: 100px;
+  font-family: "Architects Daughter", sans-serif;
+}
+
+#win, #lose, #draw {
+  display: none;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+footer a {
+  color: white;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Build a Tic Tac Toe Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class = "turns">
+  <p id = "turn">Player 1's Turn</p>
+  <p id = "turn2">Player 2's Turn</p>
+</div>
+<div id = "outer">
+  <div id = "top">
+    <button id = "reset">Reset All</button>
+    <p class = "score" id = "score1"><span class = "points" id = "s1">0</span><span>Player 1</span></p>
+    <i id = "divider">&#124;</i>
+    <p class = "score" id = "score2"><span class = "points" id = "s2">0</span><span>Player 2</span></p>
+  </div>
+  <div id = "inner">
+    <div id = "board">
+      <div id = "starting">
+        <p>How do you want to play?</p>
+        <button class = "players">One Player</button>
+        <button class = "players">Two Player</button>
+      </div>
+      <div id = "starting2">
+        <p>Would you like to be X or O?</p>
+        <button class = "XO">X</button>
+        <button class = "XO">O</button>
+        <button id = "back"><i class="fa fa-arrow-left"></i> Back</button>
+      </div>
+      <canvas id = "game">
+      </canvas>
+      <ul id = "boxes">
+        <li><i class = "box" id = "box1" value = "1">
+          </i></li>
+        <li><i class = "box" id = "box2" value = "2">
+          </i></li>
+        <li><i class = "box" id = "box3" value = "3">
+          </i></li>
+        <li><i class = "box" id = "box4" value = "4">
+          </i></li>
+        <li><i class = "box" id = "box5" value = "5">
+          </i></li>
+        <li><i class = "box" id = "box6" value = "6">
+          </i></li>
+        <li><i class = "box" id = "box7" value = "7">
+          </i></li>
+        <li><i class = "box" id = "box8" value = "8">
+          </i></li>
+        <li><i class = "box" id = "box9" value = "9">
+          </i></li>
+      </ul>
+      <div id = "results">
+        <p id = "draw">It was a draw..</p>
+        <p id = "lose">Uh oh, you lost..</p>
+        <p id = "win">You Won!!! :)</p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <p class = "text-center">Coded by Leonard Tye</p>
+  Design reverse engineered from <a href="https://codepen.io/FreeCodeCamp/full/KzXQgy/" target="_blank">Free Code Camp</a>
+</footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
